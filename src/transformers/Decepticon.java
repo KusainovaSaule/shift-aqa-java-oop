@@ -1,6 +1,6 @@
 package transformers;
 
-public class Decepticon extends Transformer {
+public class Decepticon extends Transformer implements Action {
     private String teamName;
     private final String eyeColor;
     private boolean kindness;
@@ -12,7 +12,18 @@ public class Decepticon extends Transformer {
         this.kindness = false;
     }
 
+    @Override
     public void transform() {
-        System.out.println(name + " трансформируется в назменый транспорт, воздушный транспорт, оружие, технику");
+        System.out.println(name + " трансформируется в наземный транспорт, воздушный транспорт, оружие, технику");
+    }
+
+    @Override
+    public void fire() {
+        System.out.println(name + " стреляет");
+    }
+
+    @Override
+    public void charge() {
+        System.out.println(name + " заряжается");
     }
 }
