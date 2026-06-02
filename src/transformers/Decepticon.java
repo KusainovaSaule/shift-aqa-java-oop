@@ -13,6 +13,26 @@ public class Decepticon extends Transformer {
     }
 
     public void transform() {
-        System.out.println(name + " трансформируется в назменый транспорт, воздушный транспорт, оружие, технику");
+        System.out.println(getName() + " трансформируется в назменый транспорт, воздушный транспорт, оружие, технику");
+    }
+
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
+    public String getEyeColor() {
+        return eyeColor;
+    }
+
+    public boolean getKindness() {
+        return kindness;
+    }
+
+    public void setKindness(boolean kindness) {
+        this.kindness = kindness;
     }
 }

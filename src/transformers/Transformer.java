@@ -1,7 +1,7 @@
 package transformers;
 
 public class Transformer {
-    protected String name;
+    private String name;
 
     public void run() {
         System.out.println(name + " is running");
@@ -16,6 +16,14 @@ public class Transformer {
     }
 
     public Transformer(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 }
